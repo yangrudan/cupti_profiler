@@ -90,7 +90,8 @@ int main() {
     printf("%s\n", name.c_str());
   }
 
-  thrust::host_vector<float> h_data(data);
+  std::vector<float> h_data;
+  thrust::copy(data.begin(), data.end(), std::back_inserter(h_data));
 
   /*printf("\n");
   for(int i = 0; i < 10; ++i) {

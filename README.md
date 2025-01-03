@@ -7,6 +7,11 @@ sets up the appropriate CUPTI callbacks, calculates the number of
 kernel passes required, gathers values for the specified
 metrics and events, and returns them to the programmer on a per-kernel basis.
 
+```
+export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda-12.3/lib64
+./demo
+```
+
 **Example Usage:**
 
 ``` c++
